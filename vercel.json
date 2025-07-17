@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "deno_index.ts",
+      "use": "@vercel/deno"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "deno_index.ts"
+    }
+  ]
+}
